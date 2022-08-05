@@ -97,6 +97,6 @@ class ReController extends Controller
 
     public function store_real_estate(Request $request)
     {
-        dd($request->data);
+        dd( explode('&',$request->data) );
     }
 }
