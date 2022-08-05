@@ -300,7 +300,7 @@
                         </div>
 
                         <div class="col-md-12" style="margin-top: 2%; margin-right: 2%">
-                            <div class="alert alert-danger" id="room_add_alert"></div>
+                            <div class="alert alert-danger" id="room_add_alert" hidden></div>
                             <label for="">عرض الغرف</label>
                             <table class="table" id="room_table">
                                 <thead>
@@ -356,18 +356,20 @@
             var length = $('#others_length_id').val();
             var width = $('#others_width_id').val();
 
-            if(type != '' && length != '' && width != ''){
-                var row = '<tr><th scope="row">' + (rows_count ) + '</th><td>' + type + '</td><td>' + length +
+            if (type != '' && length != '' && width != '') {
+                var row = '<tr><th scope="row">' + (rows_count) + '</th><td>' + type + '</td><td>' + length +
                     '</td><td>' + width + '</td></tr>';
                 $('#room_table').append(row);
-    
+
                 $('#others_id').val('');
                 $('#others_length_id').val('');
                 $('#others_width_id').val('');
-            }
-            else
-            {
-
+            } else {
+                $('#room_add_alert').attr('hidden', false);
+                $('#room_add_alert').text('You should add room details');
+                setTimeout(() => {
+                    $('#room_add_alert').attr('hidden', true);
+                }, 5000);
             }
         });
     </script>
