@@ -94,4 +94,9 @@ class ReController extends Controller
         $users = User::get();
         return view('Real Estates.create',['users'=>$users, 'userAuth'=>$userAuth, 'categories'=>$categories,'states'=>$states,'periods' => $periods,'properties' => $properties]);
     }
+
+    public function store_real_estate(Request $request)
+    {
+        dd($request->data);
+    }
 }

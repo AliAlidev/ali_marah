@@ -62,6 +62,7 @@ Route::get('edit_real_estate/{id}',[ReController::class,'editShow']);
 Route::post('edit_real_estate',[ReController::class,'edit']);
 Route::get('categories',[ReController::class,'categories']);
 Route::get('create-real-estate',[ReController::class,'create_real_estate']);
+Route::post('store-real-estate',[ReController::class,'store_real_estate']);
 
 
 ///endsection
