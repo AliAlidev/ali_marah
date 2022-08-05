@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::table('real_states', function(Blueprint $table){
             $table->string('real_estate_type')->nullable();
             $table->float('rent_amount')->default(0);
+            $table->float('amount')->default(0);
             $table->float('area')->default(0);
             $table->float('total_area')->default(0);
             $table->integer('sleep_room_count')->default(0);

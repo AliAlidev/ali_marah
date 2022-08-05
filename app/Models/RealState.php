@@ -9,5 +9,15 @@ class RealState extends Model
 {
     use HasFactory;
     protected $table="real_states";
-    protected $fillable = [ 'lat' ,'long' , 'qrcode' ,'user_id' ,'state_id' , 'property_id' ,'category_id' ,'active'] ;
+    protected $guarded=[] ;
+
+    public function images()
+    {
+        return $this->hasMany(RealEstateImage::class,'real_estate_id','id');
+    }
+
+    public function rooms()
+    {
+        return $this->hasMany(Room::class,'real_estate_id','id');
+    }
 }

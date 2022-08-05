@@ -176,5 +176,14 @@ class UserSeeder extends Seeder
 
             'password' =>'secret' ,
         ]);
+        User::create([
+            'name' => 'صاحب العقار',
+            'image'=>'avater.jpg',
+            'city'=>'lattakia',
+            'region'=>'fff',
+            'password' =>'secret' ,
+            'role' => 'owner',
+        ]);
+
     }
 }
