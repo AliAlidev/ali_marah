@@ -237,19 +237,7 @@
                                 <input type="radio" name="option7" value="option2" style="margin-right: 2%">&nbsp;لا
                             </div>
                         </div>
-
-                        <div class="col-md-12" style="margin-top: 4%">
-                            <div class="col-md-4">
-                                <label for="">رقم نسق الشاليه</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="">المساحة الكلية </label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                        </div>
-
+                        
                         <div class="col-md-12" style="margin-top: 2%">
                             <div class="col-md-6" style="font-size: 16px;font-weight: 800">
                                 هل يوجد ممرات
@@ -269,6 +257,19 @@
                                 <input type="radio" name="option7" value="option2" style="margin-right: 2%">&nbsp;لا
                             </div>
                         </div>
+
+                        <div class="col-md-12" style="margin-top: 4%">
+                            <div class="col-md-4">
+                                <label for="">رقم نسق الشاليه</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">المساحة الكلية </label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                        </div>
+
 
                         <div class="col-md-12" style="margin-top: 2%">
                             <div class="col-md-4">
