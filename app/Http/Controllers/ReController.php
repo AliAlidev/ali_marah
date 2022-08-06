@@ -174,7 +174,8 @@ class ReController extends Controller
                 "description" => $request->description != null ? $request->description : null,
                 "vedio_links" => $request->vedio_links != null ? $request->vedio_links : null,
                 "options" => json_encode($options),
-                "address_title" => $request->address_address
+                "address_title" => $request->address_address,
+                "active" => 1
             ]
         );
 
